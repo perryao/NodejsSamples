@@ -1,5 +1,6 @@
 var net = require('net');
 var server = net.createServer(function(client){
+	//Server listens on 0.0.0.0
 	console.log('Client Connection: ');
 	console.log('    local = %s:%s', client.localAddress, client.localPort);
 	console.log('    remote = %s:%s', client.remoteAddress, client.remotePort);
